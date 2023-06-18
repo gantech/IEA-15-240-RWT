@@ -4,6 +4,8 @@ IEA 15 MW offshore reference model monopile configuration
 False                  Echo        - Echo input data to "<RootName>.ech" (flag)
 3                      Method      - Integration method: {1: RK4, 2: AB4, or 3: ABM4} (-)
 "default"              DT          Integration time step (s)
+---------------------- ENVIRONMENTAL CONDITION ---------------------------------
+    9.80665   Gravity     - Gravitational acceleration (m/s^2)
 ---------------------- DEGREES OF FREEDOM --------------------------------------
 True                   FlapDOF1    - First flapwise blade mode DOF (flag)
 True                   FlapDOF2    - Second flapwise blade mode DOF (flag)
@@ -16,12 +18,12 @@ True                   TwFADOF1    - First fore-aft tower bending-mode DOF (flag
 True                   TwFADOF2    - Second fore-aft tower bending-mode DOF (flag)
 True                   TwSSDOF1    - First side-to-side tower bending-mode DOF (flag)
 True                   TwSSDOF2    - Second side-to-side tower bending-mode DOF (flag)
-True                   PtfmSgDOF   - Platform horizontal surge translation DOF (flag)
-True                   PtfmSwDOF   - Platform horizontal sway translation DOF (flag)
-True                   PtfmHvDOF   - Platform vertical heave translation DOF (flag)
-True                   PtfmRDOF    - Platform roll tilt rotation DOF (flag)
-True                   PtfmPDOF    - Platform pitch tilt rotation DOF (flag)
-True                   PtfmYDOF    - Platform yaw rotation DOF (flag)
+False                  PtfmSgDOF   - Platform horizontal surge translation DOF (flag)
+False                  PtfmSwDOF   - Platform horizontal sway translation DOF (flag)
+False                  PtfmHvDOF   - Platform vertical heave translation DOF (flag)
+False                  PtfmRDOF    - Platform roll tilt rotation DOF (flag)
+False                  PtfmPDOF    - Platform pitch tilt rotation DOF (flag)
+False                  PtfmYDOF    - Platform yaw rotation DOF (flag)
 ---------------------- INITIAL CONDITIONS --------------------------------------
 0.0                    OoPDefl     - Initial out-of-plane blade-tip displacement (meters)
 0.0                    IPDefl      - Initial in-plane blade-tip deflection (meters)
